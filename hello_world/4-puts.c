@@ -4,7 +4,7 @@
  * main - Entry point of the program
  *
  * Description: This program prints "Programming is like building a multilingual
- * puzzle" using the puts function, followed by a new line.
+ * puzzle" u new line.
  *
  * Return: Always 0 (Success)
  */
