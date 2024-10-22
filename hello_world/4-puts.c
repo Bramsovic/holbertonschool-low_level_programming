@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
 * Principal - Point d'entrée du programme
 *
