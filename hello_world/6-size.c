@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 /**
- * This function prints the size of different data types on the machine.
+ * main - Prints the sizes of various data types on the machine.
+ *
+ * This program displays the size of different types of data such as char, int,
+ * long int, long long int, and float on the machine it is compiled and run on.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
