@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev - Affiche une chaîne de caractères en sens inverse suivie d'un saut de ligne.
+ * print_rev - Affiche une chaîne de caractères en sens inverse.
  * @s: pointeur vers la chaîne de caractères à afficher.
  */
 void print_rev(char *s)
