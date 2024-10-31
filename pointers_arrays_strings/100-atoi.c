@@ -6,7 +6,7 @@
  *
  * Return: the integer value of the converted string
  */
-int _atoi(char * s)
+int _atoi(char *s)
 {
 int i = 0;
 int sign = 1;
@@ -27,5 +27,5 @@ else if (started)
 break;
 i++;
 }
-return (sign * result);
+return (sign *result);
 }
