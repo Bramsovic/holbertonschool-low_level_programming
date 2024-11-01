@@ -12,7 +12,7 @@ int i = 0;
 while (str[i] != '\0')
 {
 if (str[i] >= 'a' && str[i] <= 'z')
-str[i] = str[i] - 32; // Convert to uppercase by adjusting ASCII value
+str[i] = str[i] - 32;
 i++;
 }
 return (str);
