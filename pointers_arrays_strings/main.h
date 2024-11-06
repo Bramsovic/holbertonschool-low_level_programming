@@ -3,6 +3,8 @@
 
 int _putchar(char c);
 
+char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
