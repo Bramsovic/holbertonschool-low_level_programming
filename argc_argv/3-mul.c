@@ -5,7 +5,7 @@
  * @argc: Argument count
  * @argv: Array of argument strings
  *
- * Return: 0 if successful, 1 if there are not exactly two arguments
+ * Return: 0 if successful
  */
 int main(int argc, char *argv[])
 {
