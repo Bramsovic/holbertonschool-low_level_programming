@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _pow_recursion - returns the value
- * @x: the base number
- * @y: the exponent
- * 
- * Return: x raised to the power
- */
+  * _pow_recursion - Renvoie la valeur de x
+  * @x: la valeur à multiplier
+  * @y: le nombre de fois à multiplier
+  *
+  * Return: valeur mutiplié y fois
+  */
 int _pow_recursion(int x, int y)
 {
 if (y < 0)
