@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - Entry point, multiplies two numbers
  * @argc: Argument count
