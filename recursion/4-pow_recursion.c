@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _pow_recursion - returns the value
  * @x: the base number
