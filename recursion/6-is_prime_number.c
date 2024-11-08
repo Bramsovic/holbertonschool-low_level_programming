@@ -1,7 +1,7 @@
 #include "main.h"
 int check_prime(int n, int i);
 /**
- * is_prime_number - returns 1 if the input integer is a prime number, otherwise 0
+ * is_prime_number - returns 1 if the input integer
  * @n: the number to check
  *
  * Return: 1 if prime, 0 otherwise
@@ -13,7 +13,7 @@ return (0);
 return (check_prime(n, 2));
 }
 /**
- * check_prime - checks if a number is divisible by any number other than 1 and itself
+ * check_prime - checks if a number is divisible
  * @n: the number to check
  * @i: the divisor to test
  *
