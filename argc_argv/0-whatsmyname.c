@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point, prints the program's name
  * @argc: Argument count (not used here)
