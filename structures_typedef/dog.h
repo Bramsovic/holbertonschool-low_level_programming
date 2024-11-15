@@ -7,7 +7,7 @@
  * @age: Âge du chien
  * @owner: Propriétaire du chien
  *
- * Description: Une structure définissant des informations de base sur un chien.
+ * Description: Une structure définissant des infos sur chien
  */
 struct dog
 {
