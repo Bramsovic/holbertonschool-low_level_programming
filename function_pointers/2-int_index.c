@@ -1,12 +1,12 @@
 #include <stdlib.h>
 #include "function_pointers.h"
 /**
- * int_index cherche entier
+ * int_index - cherche entier
  * @array: le tableau entiers
  * @size: la taille du tableau
  * @cmp: un pointeur
  *
- * Return:
+ * Return: index de la première correspondance
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
