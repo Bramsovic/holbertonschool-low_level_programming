@@ -4,7 +4,7 @@
  * int_index cherche entier
  * @array: le tableau entiers
  * @size: la taille du tableau
- * @cmp: un pointeur 
+ * @cmp: un pointeur
  *
  * Return:
  */
