@@ -4,7 +4,7 @@
  * @name: Pointeur
  * @f: Pointeur sur une fonction qui prend un pointeur
  *
- * Appelle la fonction f avec le nom si name et f ne sont pas NULL.
+ * Focntion qui utlise focntion
  */
 void print_name(char *name, void (*f)(char *))
 {
