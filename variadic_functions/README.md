@@ -110,4 +110,4 @@ Auteur
 
 Ce projet a été développé dans le cadre du cursus de Holberton School sur la programmation bas niveau en C.
 
-Bon codage !
+Bon codage ! :)
