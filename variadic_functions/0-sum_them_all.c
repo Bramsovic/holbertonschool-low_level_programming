@@ -23,10 +23,3 @@ va_start(arguments, n);
 va_end(arguments);
 return (sum_them_all);
 }
-
-
-
-
-
-
-
