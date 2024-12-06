@@ -10,26 +10,26 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-    dlistint_t *debutliste;
-    debutliste = malloc(sizeof(dlistint_t));
+dlistint_t *debutliste;
+debutliste = malloc(sizeof(dlistint_t));
 if (debutliste == NULL)
-    return (NULL);
+return (NULL);
  debutliste->n = n;
 if (debutliste->n == 0)
 {
-    free(debutliste);
-    return (0);
+free(debutliste);
+return (0);
 }
 if(*head == NULL)
 {
-    debutliste->next = NULL;
-    *head = debutliste;
+debutliste->next = NULL;
+*head = debutliste;
 }
 else
 {
-    debutliste->next = *head;
-    (*head)->prev = debutliste;
-    *head = debutliste;
+debutliste->next = *head;
+(*head)->prev = debutliste;
+*head = debutliste;
 }
-return(debutliste);
+return (debutliste);
 }
