@@ -20,8 +20,16 @@ if (debutliste->n == 0)
     free(debutliste);
     return (0);
 }
-debutliste->next = *head;
-*head = debutliste;
-debutliste->prev = NULL;
-return (debutliste);
+if(*head == NULL)
+{
+    debutliste->next = NULL;
+    *head = debutliste;
+}
+else
+{
+    debutliste->next = *head;
+    (*head)->prev = debutliste;
+    *head = debutliste;
+}
+return(debutliste);
 }
