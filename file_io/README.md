@@ -1,5 +1,3 @@
-Voici un exemple complet de fichier `README.md` pour votre projet, en utilisant une mise en forme cohérente avec des blocs de code (```) comme demandé :
-
 ```markdown
 # File I/O Project
 
