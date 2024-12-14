@@ -14,12 +14,12 @@ unsigned int compteur;
 int sum_them_all = 0;
 va_list arguments;
 va_start(arguments, n);
-    if (n == 0)
-        return (0);
-    for (compteur = 0; compteur < n; compteur++)
-    {
-        sum_them_all += va_arg(arguments, int);
-    }
+if (n == 0)
+return (0);
+for (compteur = 0; compteur < n; compteur++)
+{
+sum_them_all += va_arg(arguments, int);
+}
 va_end(arguments);
 return (sum_them_all);
 }
