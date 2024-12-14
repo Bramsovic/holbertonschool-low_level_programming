@@ -18,6 +18,6 @@ printf("%d", va_arg(arguments, int));
 if (separator != NULL && compteur < n - 1)
 printf("%s", separator);
 }
-va_end(arguments); 
-printf("\n");  
+va_end(arguments);
+printf("\n");
 }
