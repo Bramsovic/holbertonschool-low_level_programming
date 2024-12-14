@@ -1,37 +1,38 @@
-#include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * print_strings - Prints strings, followed by a new line.
- * @separator: The string to be printed between strings.
+ * print_strings - Prints strings followed by a new line.
+ * @separator: The string to be printed between the strings.
  * @n: The number of strings passed to the function.
  *
- * Return: void.
+ * Description: If a string is NULL, "(nil)" is printed instead.
+ * If the separator is NULL, it is not printed. A new line is
+ * added at the end of the output.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list args;
-	unsigned int i;
-	char *str;
-/* Initialize the argument list */
-	va_start(args, n);
-	for (i = 0; i < n; i++)
+unsigned int index;  /* Iterator for traversing the arguments */
+va_list arg_list;    /* List to hold the variadic arguments */
+char *current_string; /* Pointer to hold each string argument */
+/* Initialize the variadic argument list */
+va_start(arg_list, n);
+for (index = 0; index < n; index++)
 {
 /* Get the next string argument */
-	str = va_arg(args, char *);
+current_string = va_arg(arg_list, char *);
 /* Print (nil) if the string is NULL */
-if (str == NULL)
-	printf("(nil)");
+if (current_string == NULL)
+printf("(nil)");
 else
-	printf("%s", str);
-/* Print the separator if it's not NULL and not the last argument */
-if (separator != NULL && i < n - 1)
-	printf("%s", separator);
+printf("%s", current_string); /* Print the valid string */
+/* Print the separator if it's not NULL and not the last string */
+if (separator != NULL && index < n - 1)
+printf("%s", separator);
 }
-/* End the argument list */
-	va_end(args);
-/* Print a new line */
-	printf("\n");
+/* Clean up the variadic argument list */
+va_end(arg_list);
+/* Print a new line at the end */
+printf("\n");
 }
