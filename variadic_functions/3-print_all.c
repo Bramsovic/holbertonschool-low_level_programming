@@ -12,43 +12,37 @@
  */
 void print_all(const char * const format, ...)
 {
-    va_list arguments;
-    unsigned int format_index = 0;
-    char *separator_string = "";
-    char *string_argument;
-
-    va_start(arguments, format);
-
-    while (format && format[format_index])
-    {
-        if (format[format_index] == 'c')
-        {
-            printf("%s%c", separator_string, va_arg(arguments, int));
-        }
-        else if (format[format_index] == 'i')
-        {
-            printf("%s%d", separator_string, va_arg(arguments, int));
-        }
-        else if (format[format_index] == 'f')
-        {
-            printf("%s%f", separator_string, va_arg(arguments, double));
-        }
-        else if (format[format_index] == 's')
-        {
-            string_argument = va_arg(arguments, char *);
-            if (!string_argument)
-                string_argument = "(nil)";
-            printf("%s%s", separator_string, string_argument);
-        }
-        else
-        {
-            format_index++;
-            continue;
-        }
-        separator_string = ", ";
-        format_index++;
-    }
-
-    va_end(arguments);
-    printf("\n");
+va_list arguments;
+unsigned int index = 0;
+char *separator = "";
+char *string;
+va_start(arguments, format);
+while (format && format[index])
+{
+if (format[index] == 'c' || format[index] == 'i' ||
+format[index] == 'f' || format[index] == 's') /* 1st IF */
+{
+printf("%s", separator);
+switch (format[index]) /* SWITCH replaces ELSE-IFs */
+{
+case 'c':
+printf("%c", va_arg(arguments, int));
+break;
+case 'i':
+printf("%d", va_arg(arguments, int));
+break;
+case 'f':
+printf("%f", va_arg(arguments, double));
+break;
+case 's':
+string = va_arg(arguments, char *);
+printf("%s", string ? string : "(nil)");
+break;
+}
+separator = ", ";
+}
+index++;
+}
+va_end(arguments);
+printf("\n");
 }
